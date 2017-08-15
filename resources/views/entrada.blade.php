@@ -16,7 +16,7 @@
                         {!! Form::datetime('datetime', \Carbon\Carbon::now('America/Sao_Paulo')->format('Y-m-d H:i:s')) !!}
                         <br>
                         {!! Form::label('placa', 'Placa:') !!}
-                        {!! Form::input('text', 'placa', null, ['class' => 'form-control', '', 'placeholder'=> 'Placa']) !!}
+                        {!! Form::input('text', 'placa', null, ['class' => 'form-control', 'placeholder'=> 'Placa']) !!}
 
 
                         {!! Form::submit('Salvar', ['class'=> 'btn btn-primary navbar-btn']) !!}
@@ -27,5 +27,6 @@
             </div>
         </div>
     </div>
+
 
 @endsection

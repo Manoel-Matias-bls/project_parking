@@ -1,5 +1,8 @@
 <?php $__env->startSection('content'); ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
 
+    <input ng-if="!remove" class="form-control ng-scope ng-dirty ng-valid-parse ng-touched ng-valid ng-valid-mask" id="masked" name="masked" ui-mask="AAA-9999" ui-options="" model-view-value="" ng-model="vm.x" placeholder="Write a mask or click a button" ui-mask-placeholder="" ui-mask-placeholder-char="">
+    
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -19,7 +22,7 @@
                         <br>
                         <?php echo Form::label('placa', 'Placa:'); ?>
 
-                        <?php echo Form::input('text', 'placa', null, ['class' => 'form-control', '', 'placeholder'=> 'Placa']); ?>
+                        <?php echo Form::input('text', 'placa', null, ['class' => 'form-control', 'placeholder'=> 'Placa']); ?>
 
 
 
@@ -33,6 +36,7 @@
             </div>
         </div>
     </div>
+
 
 <?php $__env->stopSection(); ?>
 
